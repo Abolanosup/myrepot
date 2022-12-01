@@ -421,7 +421,7 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
             tspace = config.space
             tspace[username] = tspace[username] + spac
             filesize = []
-            txtinfo = '====>>> #𝔽𝕚𝕟𝕒𝕝𝕚𝕫𝕒𝕕𝕠 <<<<====\n#ℕ𝕒𝕞𝕖: ' + txtsendname + '\n#𝔽𝕚𝕟𝕒𝕝𝕚𝕫𝕒𝕕𝕠'
+            txtinfo = #ℕ𝕒𝕞𝕖: ' + txtsendname + '\n#𝔽𝕚𝕟𝕒𝕝𝕚𝕫𝕒𝕕𝕠'
             username = ev.message.chat.username
             await bot.delete_messages(ev.chat,message)
             await bot.send_file(ev.chat,txtsendname,
