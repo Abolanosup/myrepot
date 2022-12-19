@@ -18,7 +18,7 @@ ACCES_USERS = os.environ.get('tl_admin_user','Abolanos3').split(';')
 
 
 
-static_proxy = '' #agrega si kieres tener un proxy statico Con @quejestoniuyol si kieres comprar un proxy
+static_proxy = 'http://KJCKLHYGKEGDYDKDGKCIYEDHCFRHDELDDGLF' #agrega si kieres tener un proxy statico Con @quejestoniuyol si kieres comprar un proxy
 
 PROXY = ProxyCloud.parse(static_proxy)
 
