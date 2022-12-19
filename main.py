@@ -22,7 +22,7 @@ from pydownloader.downloader import Downloader
 import shorturl
 import xdlink
 
-tl_admin_users = ['Abolanos3','elnietodecacha'] #Poner aqui los user con acceso permanente
+tl_admin_users = ['Abolanos3'] #Poner aqui los user con acceso permanente
 godlist = ['Abolanos3'] #Poner aqui los admin 
 
 async def get_root(username):
@@ -80,7 +80,7 @@ async def download_progress(dl, filename, currentBits, totalBits, speed, totalti
             msg += '🏷️ ' + filename + ' 🏷️ '
             msg += text_progres(currentBits, totalBits) + ' ' + str(porcent(currentBits, totalBits)) + '%\n'
             msg += '🔽 ' + sizeof_fmt(currentBits) + ' de ' + sizeof_fmt(totalBits) + '\n'
-            msg += '⚡ ' + sizeof_fmt(speed) +   '⏳ ' + str(time.strftime('%H:%M:%S', time.gmtime(totaltime))) + '/s\n'
+            msg += '⚡SPD ' + sizeof_fmt(speed) +   '⏳ETA ' + str(time.strftime('%H:%M:%S', time.gmtime(totaltime))) + '/s\n'
             await bot.edit_message(ev.chat,message,text=msg)
 
     except Exception as ex:
@@ -101,7 +101,7 @@ def upload_progress(filename, currentBits, totalBits, speed, totaltime, args):
             msg += '🏷️ ' + filename + ' 🏷️ '
             msg += '\n' + text_progres(currentBits, totalBits) + ' ' + str(porcent(currentBits, totalBits)) + '%\n' + '\n'
             msg += '🔼 ' + sizeof_fmt(currentBits) + ' de ' + sizeof_fmt(totalBits) + '\n'
-            msg += '⚡ ' + sizeof_fmt(speed) +   '⏳ ' + str(time.strftime('%H:%M:%S', time.gmtime(totaltime))) + 's\n'
+            msg += '⚡SPD ' + sizeof_fmt(speed) +   '⏳ETA ' + str(time.strftime('%H:%M:%S', time.gmtime(totaltime))) + 's\n'
             STORE_UPLOADER[filename] = msg
 
     except Exception as ex:
