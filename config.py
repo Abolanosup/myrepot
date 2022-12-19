@@ -8,7 +8,7 @@ SPLIT_FILE = 1024 * 1024 * int(os.environ.get('split_file','99'))
 ROOT_PATH = 'root/'
 ACCES_USERS = os.environ.get('tl_admin_user','Abolanos3').split(';')
 
-static_proxy = 'http://KEDHKHYFJKJGGFYKJGGEGKYDIKKERHDJLJDKLD'
+static_proxy = 'http://KJCKLHYGKEGDYDKDGKCIYEDHCFRHDELDDGLF'
 PROXY = ProxyCloud.parse(static_proxy)
 
 if PROXY:
@@ -20,4 +20,4 @@ if PROXY:
 #ponerlos valor 0 siempre
 
 space = {}
-space['Abolanos3'] = 0
+space['Abolanos3','elnietodecacha] = 0
